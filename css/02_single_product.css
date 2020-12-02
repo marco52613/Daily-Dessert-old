@@ -1,0 +1,501 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "源泉圓體";
+  font-weight: 300;
+  font-size: 0;
+}
+
+body{
+  background-image: url(../image/pattern_2.jpg);
+}
+
+div.content{
+  margin: 0 auto;
+}
+
+
+
+/* 內文1:照片+說明+購物表單 */
+
+/* 圖片區 */
+
+div.content_1{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.three_images{
+  width: 540px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.empty_grid{
+  width: 100%;
+  height: 570px;
+  order: 1;
+}
+div.big_image{
+  position: absolute;
+}
+
+div.big_image > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.small_1{
+  order: 2;
+  box-shadow: 0px 0px 3px 3px black inset;
+  position: relative;
+}
+
+img.small_1{
+  opacity: 0.7;
+}
+
+div.small_2{
+  order: 3;
+  position: relative;
+}
+
+div.small_3{
+  order: 4;
+  position: relative;
+}
+
+div.three_images > div > p{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #242323;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.small_1, div.small_2, div.small_3{
+  height: 180px;
+}
+
+div.small_2 > p, div.small_3 > p{
+  visibility: hidden;
+}
+
+img.big_1{
+  opacity: 1;
+}
+
+img.big_2, img.big_3{
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* hover小圖二的效果 */
+
+div.small_2:hover{
+  box-shadow: 0px 0px 3px 3px black inset;
+}
+
+div.small_2:hover > img.small_2{
+  opacity: 0.7;
+}
+
+div.small_2:hover ~ div.small_1{
+  box-shadow: none;
+}
+
+div.small_2:hover ~ div.small_1 > img.small_1{
+  opacity: 1;
+}
+
+div.small_2:hover ~ div.big_image > img.big_2{
+  opacity: 1;
+}
+
+div.small_2:hover ~ div.big_image > img.big_1{
+  opacity: 0;
+  transition: 0.4s;
+}
+
+div.small_2:hover > p{
+  visibility: visible;
+}
+
+div.small_2:hover ~ div.small_1 > p{
+  visibility: hidden;
+}
+
+/* hover小圖三的效果 */
+
+div.small_3:hover{
+  box-shadow: 0px 0px 3px 3px black inset;
+}
+
+div.small_3:hover > img.small_3{
+  opacity: 0.7;
+}
+
+div.small_3:hover ~ div.small_1{
+  box-shadow: none;
+}
+
+div.small_3:hover ~ div.small_1 > img.small_1{
+  opacity: 1;
+}
+
+div.small_3:hover ~ div.big_image > img.big_3{
+  opacity: 1;
+}
+
+div.small_3:hover ~ div.big_image > img.big_1{
+  opacity: 0;
+  transition: 0.4s;
+}
+
+div.small_3:hover > p{
+  visibility: visible;
+}
+
+div.small_3:hover ~ div.small_1 > p{
+  visibility: hidden;
+}
+
+
+/* 右側文字區 */
+
+div.right_side{
+  width: 400px;
+  position: relative;
+}
+
+div.context{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.context > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  color: #242323;
+  margin: 20px 0 0 0;
+}
+
+div.context > p{
+  font-size: 14px;
+  color: #565656;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 100%;
+  line-height: 24px;
+}
+
+div.context > p:nth-child(2){
+  padding: 0;
+  font-size: 500;
+  color: #963200;
+  border-bottom: 1px solid gray;
+}
+
+/* 右側tab選單 */
+
+div.tab{
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  height: 300px;
+}
+
+ul.tab{
+  color: #353535;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul.tab > li{
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  height: 50px;
+  margin-right: 5px;
+  
+}
+
+li.tab_1{
+  order: 1;
+  background-color: white;
+  font-weight: 400;
+}
+
+li.tab_2{
+  order: 2;
+  background-color: rgb(204, 140, 80);
+  color: white;
+}
+
+li.tab_3{
+  order: 3;
+  background-color: rgb(204, 140, 80);
+  color: white;
+}
+
+ul.tab > li > p{
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+div.tab_content{
+  font-size: 20px;
+  width: 400px;
+  height: 264px;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-14px);
+  border-radius: 15px;
+  background-color: white;
+}
+
+div.tab_content_1{
+  background-color: white;
+  z-index: 1;
+}
+
+div.tab_content_2{
+  left: -142px;
+  visibility: hidden;
+  z-index: 2;
+}
+
+div.tab_content_3{
+  left: -283px;
+  visibility: hidden;
+  z-index: 3;
+}
+
+ul.tab_content{
+  list-style: none;
+  padding: 20px;
+}
+
+ul.tab_content > li{
+  font-size: 14px;
+  font-weight: 400;
+  color: #353535;
+  padding: 5px 0;
+}
+
+ol.tab_content{
+  padding: 20px 20px 20px 40px;
+}
+
+ol.tab_content > li{
+  font-size: 14px;
+  font-weight: 400;
+  color: #353535;
+  padding: 5px 0;
+  line-height: 20px;
+}
+
+
+
+/* hover tab標籤效果 */
+
+li.tab_2:hover {
+  background-color: white;
+  font-weight: 400;
+  color: #353535;
+}
+
+li.tab_2:hover ~ li.tab_1{
+  background-color: rgb(204, 140, 80);
+  color: white;
+  font-weight: 400;
+}
+
+li.tab_2:hover > div.tab_content_2{
+  visibility: visible;
+}
+
+li.tab_3:hover {
+  background-color: white;
+  font-weight: 400;
+  color: #353535;
+}
+
+li.tab_3:hover ~ li.tab_1{
+  background-color: rgb(204, 140, 80);
+  color: white;
+  font-weight: 400;
+}
+
+li.tab_3:hover > div.tab_content_3{
+  visibility: visible;
+}
+
+/* 表單部分 */
+
+div.form{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+div.buttons{
+  display: flex;
+  margin: 10px 0;
+}
+
+div.buttons > span{
+  font-size: 20px;
+  font-weight: 400;
+  color: #232323;
+  padding: 10px 30px 10px 0;
+}
+
+div.buttons > button{
+  border: 1px solid gray;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 20px 0 0 20px;
+  outline:none;
+}
+
+div.buttons > button.right_button{
+  border-radius: 0 20px 20px 0;
+}
+
+div.buttons > span.result{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  padding: 8px 0 0 0;
+}
+
+/* hover + -選單的效果 */
+
+div.buttons > button:hover{
+  border: 1px solid #353535;
+  background-color: #353535;
+  color: white;
+}
+
+div.total{
+  font-size: 20px;
+  color: #242323;
+  display: flex;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+div.total p{
+  font-size: 20px;
+  color: #c52424;
+  margin: 0 0 0 50px;
+  font-weight: 500;
+}
+
+/* 購物車跟前往購物選項 */
+
+a.cart_button{
+  font-size: 18px;
+  font-family: "源泉圓體";
+  font-weight: 400;
+  background-color: rgb(228, 85, 85);
+  border-radius: 10px;
+  height: 90px;
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+  text-decoration: none;
+}
+
+a.cart_button:hover{
+  font-weight: 500;
+  background-color: rgb(158, 63, 63);
+}
+
+a.go_shopping_button{
+  font-size: 18px;
+  font-family: "源泉圓體";
+  font-weight: 400;
+  background-color: rgb(228, 85, 85);
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+a.go_shopping_button:hover{
+  font-weight: 500;
+  background-color: rgb(158, 63, 63);
+}
+
+
+/* media */
+
+
+@media screen and (min-width: 1200px){
+  div.content_header, div.content, div.content_footer{
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  div.content_header, div.content, div.content_footer{
+    width: 600px;
+  }
+}
+
+
+
+
+
+

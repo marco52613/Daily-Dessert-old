@@ -1,0 +1,259 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "源泉圓體";
+  font-weight: 300;
+  font-size: 0;
+}
+
+body{
+  background-image: url(../image/pattern_2.jpg);
+}
+
+div.content{
+  margin: 0 auto;
+}
+
+
+
+/* 內容1:生日蛋糕 */
+
+div.content_1{
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  z-index: -1;
+}
+
+div.content_1 > img{
+  width: 100%;
+}
+
+div.big_word{
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+div.big_word p{
+  font-size: 50px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  writing-mode: vertical-rl;
+  margin: 0;
+  padding: 0 5px;
+  color: #353335;
+  letter-spacing: 8px;
+  border-right: 1px solid gray;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.big_word p.p2{
+  border-left: 1px solid gray;
+}
+
+/* 內容2:季節限定 */
+
+div.content_2{
+  width: 100%;
+  margin-top: 60px;
+  border-top: 1px solid gray;
+}
+
+div.content_2_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  color: #242323;
+  margin: 20px 0 0 0;
+}
+
+div.content_2_1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* 產品 */
+
+div.content_2_1 > div.product{
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+/* 產品照片區 */
+
+div.product > div.product_image{
+  position: relative;
+  width: 100%;
+}
+
+div.product > div.product_image > img{
+  width: 100%;
+}
+
+div.product > div.product_image > div.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, .5);
+  visibility: hidden;
+}
+
+div.product > div.product_image:hover > div.mask{
+  visibility: visible;
+}
+
+div.mask > a{
+  border: 3px solid white;
+  border-radius: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .7;
+}
+
+div.mask > a > img{
+  margin-top: 10px;
+}
+
+div.mask > a > p{
+  margin: 0; 
+  font-size: 14px;
+  color: white;
+  padding: 10px ;
+}
+
+div.mask > a:hover {
+  transform:translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+
+/* 產品文字區 */
+
+div.product > a.product_name{
+  font-size: 16px;
+  color: #963200;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  margin: 18px 0 8px 0;
+}
+
+div.product > a.product_name:hover{
+  font-weight: 600;
+  color: #e05814
+}
+
+div.product > a.price{
+  font-size: 14px;
+  color: #353535;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.product > span{
+  font-size: 14px;
+  color: #898989;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+div.product > a.price:hover{
+  color: #898989;
+}
+
+div.product > p{
+  font-size: 12px;
+  color: rgb(209, 12, 12);
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  visibility: hidden;
+  font-family: "微軟正黑體";
+}
+
+div.a_few_left > p{
+  visibility: visible;
+}
+
+/* 內容3:精選生日蛋糕 */
+
+div.content_3{
+  width: 100%;
+  margin: 30px 0 90px;
+  border-top: 1px solid gray;
+}
+
+div.content_3_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  color: #242323;
+  margin: 20px 0 0 0;
+}
+
+div.content_3_1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* 產品 */
+
+div.content_3_1 > div.product{
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+/* 此區商品同div.content_2 */
+
+
+/* media */
+
+
+@media screen and (min-width: 1200px){
+  div.content_header, div.content, div.content_footer{
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  div.content_header, div.content, div.content_footer{
+    width: 600px;
+  }
+}
+
+
+
+

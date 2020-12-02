@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/07_order_step_01.css" />
+    <link rel="stylesheet" href="./css/common/footer.css" />
+    <link rel="stylesheet" href="./css/common/header.css" />
+    <title>購物車</title>
+  </head>
+  <body>
+    <div class="shadow"></div>
+    
+    <header>
+      <div class="background"></div>
+      <div class="content_header">
+        <a href="./index.html" class="logo"><img src="./image/logo.png" alt="logo" class="logo"></a>
+        <div class="icons">
+          <a href="https://facebook.com" class="fb_icon"><img src="./image/fb_icon.png" alt="fb" class="fb_icon"></a>
+          <a href="https://instagram.com" class="ig_icon"><img src="./image/ig_icon.png" alt="ig" class="ig_icon"></a>
+        </div>
+        <nav>
+          <ul class="header_list">
+            <li class="li_1"><a href="./01_product_list.html"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">全部</p><p>商品</p></a></li>
+            <li class="li_2"><a href="./01_product_list.html"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">生日</p><p>蛋糕</p></a></li>
+            <li class="li_3"><a href="./01_product_list.html"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">生乳</p><p>捲</p></a></li>
+            <li class="li_4"><a href="./01_product_list.html"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">幸福</p><p>派</p></a></li>
+            <li class="li_5"><a href="./03_news.html"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">最新</p><p>消息</p></a></li>
+            <li class="li_6"><a href="#"><img src="./image/header_arrow.png" alt="arrow"><img src="image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">關於</p><p>預購</p></a></li>
+            <li class="li_7">
+              <div class="about">
+                <img src="./image/header_arrow.png" alt="arrow"><img src="./image/header_arrow_brown.png" alt="arrow_brown" class="arrow_brown"><p class="top_word">關於</p><p>日嚐</p>              
+              </div>
+              <ul class="about_list">
+                <li class="li_7_1"><a href="./05_about_us.html">品牌故事</a></li>
+                <li class="li_7_2"><a href="./06_contact_us.html">聯絡我們</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>   
+      </div>  
+    </header>
+  
+    <div class="content">
+      <p class="esc">&times</p>
+      <div class="show_block">
+        <div class="content_1">
+          <div class="content_1_0">
+            <h1>我的購物車</h1>
+          </div>
+          <div class="content_1_1">
+            <div class="cart_header">
+              <span>商品圖片</span>
+              <span>商品名稱</span>
+              <span>規格</span>
+              <span>數量</span>
+              <span>金額</span>
+              <span>移除商品</span>
+            </div>
+            <div class="product">
+              <span><img src="./image/cart_product_01_100x100.jpg" alt="商品圖片"></span>
+              <span>金花雪白乳酪</span>
+              <span>
+                <select name="size" id="size">
+                  <option value="1">六吋</option> 
+                  <option value="2">八吋</option> 
+                </select>
+              </span>
+              <span>
+                <button class="left_button">-</button>
+                <span class="number">1</span>
+                <button class="right_button">+</button>
+              </span>
+              <span>$300</span>
+              <span>&times;</span>
+            </div>
+  
+            <div class="product">
+              <span><img src="./image/cart_product_02_100x100.jpg" alt="商品圖片"></span>
+              <span>黑森林</span>
+              <span>
+                <select name="size" id="size">
+                  <option value="1">六吋</option> 
+                  <option value="2" selected="selected">八吋</option> 
+                </select>
+              </span>
+              <span>
+                <button class="left_button">-</button>
+                <span class="number">2</span>
+                <button class="right_button">+</button>
+              </span>
+              <span>$1400</span>
+              <span>&times;</span>
+            </div>
+  
+            <div class="product">
+              <span><img src="./image/cart_product_03_100x100.jpg" alt="商品圖片"></span>
+              <span>草莓派對</span>
+              <span>
+                <select name="size" id="size">
+                  <option value="1">六吋</option> 
+                  <option value="2">八吋</option> 
+                </select>
+              </span>
+              <span>
+                <button class="left_button">-</button>
+                <span class="number">1</span>
+                <button class="right_button">+</button>
+              </span>
+              <span>$550</span>
+              <span>&times;</span>
+            </div>
+  
+            <div class="total_price">
+              <span>總金額：</span>
+              <span id="total_price">$2250</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="content_2">
+          <a href="./08_order_step_02.html">下一步，選擇取貨方式</a>
+          <a href="./01_product_list.html">返回頁面</a>
+        </div>
+      </div>
+  
+    </div>
+    
+    <footer>
+      <div class="content_footer">
+        <div class="contact">
+          <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+          <div>
+            <a href="https://facebook.com"><img src="./image/fb_icon.png" alt=""></a>
+            <a href="https://instagram.com"><img src="./image/ig_icon.png" alt=""></a>
+          </div>
+          <p>連絡電話&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03&nbsp;&nbsp;2232730</p>
+          <p>門市地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;桃園市中壢區中大路300號</p>
+          <p>營業時間&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周一至周五&nbsp;&nbsp;下午13-00至晚上21-00</p>
+          <br>
+          <p>CopyRight 2020 Marco Lin All Rights Reserved.</p>
+        </div>
+        <div class="big_word">
+          <p class="p3">我們的態度。</p>
+          <p class="p2">給你的溫度，</p>
+          <p class="p1">蛋糕的甜度，</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

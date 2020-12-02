@@ -1,0 +1,231 @@
+header{
+  position: fixed;
+  top: 0;
+  height: 95px;
+  width: 100%;
+  min-width: 600px;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+div.background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../../image/pattern_2.jpg);
+  opacity: .9;
+}
+
+div.content_header{
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+a.logo{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  display: block;
+  width: 200px;
+}
+
+a.logo > img{
+  width: 100%;
+}
+
+div.icons{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transform: translateY(0);
+  transition: transform 0.1s ease 0.5s, opacity 0.1s ease 0s;
+}
+
+div.icons > a{
+  display: inline-block;
+  width: 30px;
+}
+
+div.icons > a:first-child{
+  margin-right: 20px;
+}
+
+div.icons > a > img{
+  width: 100%;
+}
+
+nav{
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  z-index: 6;
+}
+
+ul.header_list{
+  list-style: none;
+}
+
+ul.header_list > li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.li_1{
+  padding-right: 30px;
+}
+
+.li_2, .li_3 ,.li_5, .li_6{
+  padding-right: 20px;
+}
+
+.li_4{
+  padding-right: 50px;
+}
+
+.li_7{
+  position: relative;
+}
+
+ul.header_list > li > a, div.about{
+  text-decoration: none;
+  display: block;
+  width: 22px;
+  height: 70px;
+  position: relative;
+  transition: height 0s ease 0.4s;
+}
+
+ul.header_list img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul.header_list img.arrow_brown{
+  visibility: hidden;
+}
+
+ul.header_list p{
+  font-size: 16px;
+  color: #232323;
+  font-family: "源流明體";
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease 0s, opacity 0.2s ease 0s;
+}
+
+ul.header_list > li.target p{
+  color: #963200;
+  font-weight: 900;
+}
+
+ul.header_list p.top_word{
+  top: -30px;
+  opacity: 0;
+}
+
+/* 關於日嚐內的選單 */
+
+ul.about_list{
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 115px;
+  left: -9px;
+  display: none;
+  z-index: 7;
+}
+
+ul.about_list > li{
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+ul.about_list > li > a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #242323;
+  font-family: "源流明體";
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 15px 10px;
+  writing-mode: vertical-lr;
+}
+
+
+/* hover header選單效果 */
+header:hover{
+  height: 157px;
+}
+
+header:hover > div.background{
+  opacity: 1;
+}
+
+header:hover ul.header_list p{
+  top: 70px;
+  transition: top 0.5s ease 0s;
+}
+
+header:hover ul.header_list  p.top_word{
+  opacity: 1;
+  top: 20px;
+  transition: top 0.5s ease 0s, opacity 0.3s ease 0.3s;
+}
+
+header:hover  div.icons{
+  transform: translateY(-140%);
+  opacity: 1;
+  transition: transform 0.1s ease 0s, opacity 0.05s ease 0.5s;
+}
+
+header:hover ul.header_list > li > a, header:hover div.about{
+  height: 115px;
+  transition: height 0s ease 0s;
+}
+
+/* hover 主選單 選單效果 */
+
+ul.header_list > li > a:hover p, div.about:hover, div.about:hover p{
+  color: #963200;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+ul.header_list > li > a:hover >img, div.about:hover img{
+  visibility: hidden
+}
+
+ul.header_list > li > a:hover >img.arrow_brown, div.about:hover img.arrow_brown{
+  visibility: visible;
+}
+
+li.li_7:hover  ul.about_list{
+  display: inline-flex;
+}
+
+ul.about_list > li:hover{
+  background-color: white;
+}
+
+ul.about_list > li:hover > a{
+  color: #963200;
+  font-weight: 900;
+}
+

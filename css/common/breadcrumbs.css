@@ -1,0 +1,40 @@
+/* 內文0:麵包屑 */
+
+div.breadcrumbs{
+  padding-top: 120px;
+}
+
+div.breadcrumbs > ol{
+  list-style: none;
+  padding: 0;
+}
+
+div.breadcrumbs a, li.active{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "源泉圓體";
+  color: #963200;
+  text-decoration: none;
+}
+
+div.breadcrumbs a:hover{
+  font-weight: 600;
+  color: #e05814;
+}
+
+div.breadcrumbs li{
+  display: inline-block;
+}
+
+div.breadcrumbs li + li::before{
+  content: "|";
+  font-size: 18px;
+  font-family: "源泉圓體";
+  font-weight: 300;
+  color: #232323;
+  padding: 0 10px;
+}
+
+li.active{
+  color: #676767;
+}

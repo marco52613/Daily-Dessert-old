@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "源泉圓體";
+  font-weight: 300;
+  font-size: 0;
+}
+
+body{
+  background-image: url(../image/pattern_2.jpg);
+}
+
+div.content{
+  margin: 0 auto;
+}
+
+
+/* 大圖 */
+div.content_1{
+  margin-top: 40px;
+  width: 100%; 
+}
+
+div.content_1 > img{
+  width: 100%;
+}
+
+/* 內文 */
+
+div.content_2{
+  margin-top: 60px;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+/* 聯絡我們 */
+
+div.content_2_0{
+  margin-top: 30px;
+}
+
+div.content_2_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  color: #232323;
+  margin: 0;
+  text-align: center;
+}
+
+div.content_2_1{
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.content_2_1_left{
+  width: 50%;
+}
+
+div.content_2_1_right{
+  width: 50%;
+}
+
+div.content_2_1_left > p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+}
+
+div.content_2_1_left > p:nth-child(3){
+  color: #963200;
+  margin-top: 30px;
+}
+
+div.content_2_1_left > div{
+  width: 130px;
+  margin: 50px 0 20px;
+}
+
+div.content_2_1_left > div > img{
+  width: 100%;
+}
+
+p.phone{
+  margin-bottom: 2px;
+}
+
+div.content_2_1_left > a{
+  font-size: 14px;
+  font-weight: 400;
+  color: #963200;
+  text-decoration: none;
+}
+
+div.content_2_1_right > input{
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "源泉圓體";
+  padding: 5px 10px;
+}
+
+div.content_2_1_right > textarea{
+  width: 100%;
+  font-family: "源泉圓體";
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+div.content_2_1_right > input:last-child{
+  border: none;
+  outline: none;
+  background-color: rgb(228, 85, 85);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+div.content_2_1_right > input:last-child:hover{
+  background-color: rgb(158, 63, 63);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* 門市位置 */
+
+div.content_3{
+  margin: 60px 0 100px;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+div.content_3_0{
+  margin-top: 30px;
+}
+
+div.content_3_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  color: #232323;
+  margin: 0;
+  text-align: center;
+}
+
+div.content_3_1{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.content_3_1_left{
+  width: 30%;
+  height: 300px;
+}
+
+div.content_3_1_left > iframe{
+  width: 100%;
+  height: 100%;
+}
+
+div.content_3_1_right{
+  width: 50%;
+}
+
+div.content_3_1_right > p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+  margin: 0 0 10px;
+}
+
+div.content_3_1_right > p:first-child{
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+div.content_3_1_right > p:nth-child(4){
+  color: #963200;
+}
+
+div.service_icons{
+  display: flex;
+  margin-top: 80px;
+}
+
+div.service_icons > div{
+  width: 8%;
+  margin-right: 30px;
+  position: relative;
+}
+
+div.service_icons > div > img{
+  width: 100%;
+}
+
+div.service_icons > div > p{
+  position: absolute;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100px;
+  border: 1px solid #898989;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+div.service_icons > div:hover > p{
+  visibility: visible;
+}
+
+
+
+/* media */
+
+
+@media screen and (min-width: 1200px){
+  div.content_header, div.content, div.content_footer{
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  div.content_header, div.content, div.content_footer{
+    width: 600px;
+  }
+}

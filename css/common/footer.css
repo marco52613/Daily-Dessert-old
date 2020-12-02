@@ -1,0 +1,71 @@
+footer{
+  width: 100%;
+  min-width: 600px;
+  height: 380px;
+  background-color: #757575;
+}
+
+div.content_footer{
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+div.content_footer > div.contact{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+div.content_footer > div.contact > a{
+  display: block;
+  width: 200px;
+}
+
+div.content_footer > div.contact > a >img{
+  width: 100%;
+}
+
+div.content_footer > div.contact > div > a{
+  display: inline-block;
+  width: 30px;
+  margin: 10px 20px 10px 0;
+}
+
+div.content_footer > div.contact > div > a >img{
+  width: 100%;
+}
+
+div.content_footer > div.contact > p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #353335;
+  margin: 10px 0;
+}
+
+div.content_footer > div.big_word{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.content_footer > div.big_word > p{
+  font-size: 36px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  display: inline-block;
+  writing-mode: vertical-rl;
+  padding: 0 5px;
+  margin: 0;
+  border-left: 1px solid #242323 ;
+  color: #353335;
+  letter-spacing: 8px;
+}
+
+div.content_footer > div.big_word > p.p1{
+  border-right: 1px solid #242323 ;
+}

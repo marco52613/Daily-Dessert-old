@@ -1,0 +1,579 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "源泉圓體";
+  font-weight: 300;
+  font-size: 0;
+}
+
+body{
+  background-image: url(../image/pattern_2.jpg);
+}
+
+div.content{
+  margin: 0 auto;
+}
+
+
+
+ /* home_header */
+
+
+div.index_header_top{
+  border-left: 1px solid gray;
+  position: relative;
+  height: 200px;
+}
+
+div.index_header_top > a.logo{
+  position: absolute;
+  bottom: 45%;
+  left: 20px;
+  display: block;
+  width: 200px;
+}
+
+div.index_header_top > a.logo > img{
+  width: 100%;
+}
+
+div.index_header_top > a.fb_icon{
+  position: absolute;
+  right: 40px;
+  bottom: 45%;
+  display: block;
+  width: 30px;
+}
+
+div.index_header_top > a.ig_icon{
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  display: block;
+  width: 30px;
+}
+
+div.index_header_top > a.fb_icon >img {
+  width: 100%;
+}
+
+div.index_header_top > a.ig_icon > img{
+  width: 100%;
+}
+
+/* 內容1-首屏*/
+
+div.content_1{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.content_1_left{
+  width: 30%;
+  z-index: 1;
+}
+
+div.content_1_left > p{
+  font-size: 36px;
+  font-family: "jf金萱鮮摘2.1";
+  vertical-align: top;
+  font-weight: 500;
+  display: inline-block;
+  writing-mode: vertical-rl;
+  margin: 0;
+  padding: 0 5px;
+  color: #353335;
+  letter-spacing: 8px;
+}
+
+div.content_1_left > p.p2{
+  padding-left: 0;
+}
+
+div.content_1_right{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a.big_image{
+  width: 100%;
+}
+
+a.big_image > img{
+  width: 100%;
+}
+
+div.content_1_1{
+  width: 30%;
+}
+
+div.content_1_1 > p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #646464;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
+
+/* 首頁下置的header */
+
+div.index_header{
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+ul.index_header_list{
+  list-style: none;
+}
+
+ul.index_header_list > li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.index_li_1{
+  padding-right: 30px;
+}
+
+.index_li_2, .index_li_3 ,.index_li_5, .index_li_6{
+  padding-right: 20px;
+}
+
+.index_li_4{
+  padding-right: 50px;
+}
+
+.index_li_7{
+  position: relative;
+}
+
+ul.index_header_list > li > a, div.index_about{
+  text-decoration: none;
+  display: block;
+  width: 22px;
+  height: 113px;
+  position: relative;
+}
+
+ul.index_header_list img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul.index_header_list img.arrow_brown{
+  visibility: hidden;
+}
+
+ul.index_header_list p{
+  font-size: 16px;
+  color: #232323;
+  font-family: "源流明體";
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul.index_header_list p.top_word{
+  top: 20px;
+}
+
+/* 關於首頁下置header內日嚐內的選單 */
+
+ul.index_about_list{
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 115px;
+  left: -9px;
+  display: none;
+}
+
+ul.index_about_list > li{
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+ul.index_about_list > li > a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #242323;
+  font-family: "源流明體";
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 15px 10px;
+  writing-mode: vertical-lr;
+}
+
+/* 首頁下置header hover效果 */
+
+ul.index_header_list > li > a:hover p, div.index_about:hover, div.index_about:hover p{
+  color: #963200;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+ul.index_header_list > li > a:hover >img, div.index_about:hover img{
+  visibility: hidden
+}
+
+ul.index_header_list > li > a:hover >img.arrow_brown, div.index_about:hover img.arrow_brown{
+  visibility: visible;
+}
+
+li.index_li_7:hover  ul.index_about_list{
+  display: inline-flex;
+}
+
+ul.index_about_list > li:hover{
+  background-color: white;
+}
+
+ul.index_about_list > li:hover > a{
+  color: #963200;
+  font-weight: 900;
+}
+
+/* 文字變顏色效果 */
+
+/* not-finished */
+
+/* !!!!!!!!!!!!!!!!header選單的效果 */
+
+header{
+  /* visibility: hidden; */
+  transform: translateY(-100%);
+  opacity: 0;
+  }
+
+header.on{
+  /* visibility: visible; */
+  transform: translateY(0);
+  opacity: 1;
+}
+
+div.index_header.on{
+  visibility: hidden;
+}
+
+
+/* 內容2-最新消息 */
+div.content_2{
+  border-top: 1px solid gray;
+  margin-top: 50px;
+}
+
+div.content_2_0{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+div.content_2_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  margin: 0;
+  color: #232323;
+}
+
+div.content_2_0 > a{
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #963200;
+}
+
+div.content_2_0 > a:hover{
+  color: #e05814;
+}
+
+div.content_2_1{
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+}
+
+div.content_2_1_left{
+  width: 60%;
+}
+
+div.content_2_1_left > img{
+  width: 100%;
+}
+
+div.content_2_1_right{
+  width: 40%;
+  text-align: right;
+}
+
+div.content_2_1_right > p{
+  font-size: 36px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  display: inline-block;
+  writing-mode: vertical-rl;
+  padding: 0 5px;
+  margin: 0;
+  border-left: 1px solid gray ;
+  color: #353335;
+  letter-spacing: 8px;
+}
+
+div.content_2_1_right > p.p1{
+  border-right: 1px solid gray ;
+}
+
+div.content_2_2{
+  display: flex;
+  margin-top: 15px;
+}
+
+div.content_2_2_left{
+  width: 40%;
+  position: relative;
+}
+
+div.content_2_2_1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.content_2_2_1 > a{
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+  color: #963200;
+  letter-spacing: 3px;
+}
+
+div.content_2_2_1 > a:hover{
+  color: #e05814;
+}
+
+div.content_2_2_1 > p{
+  width: 90%;
+  border-top: 1px solid gray;
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  padding-top: 10px ;
+  color: #676767;
+  margin: 0;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
+div.div.content_2_2_right{
+  width: 60%;
+}
+
+div.div.content_2_2_right > img{
+  width: 100%;
+}
+
+
+/* 內容2-幸福主打 */
+div.content_3{
+  border-top: 1px solid gray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+div.content_3_0{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+div.content_3_0 > h1{
+  font-size: 30px;
+  font-family: "jf金萱鮮摘2.1";
+  font-weight: 500;
+  margin: 0;
+  color: #232323;
+}
+
+div.content_3_0 > a{
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #963200;
+}
+
+div.content_3_0 > a:hover{
+  color: #e05814;
+}
+
+div.content_3_1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* 產品 */
+
+div.content_3_1 > div.product{
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+/* 產品照片區 */
+
+div.product > div.product_image{
+  position: relative;
+  width: 100%;
+}
+
+div.product > div.product_image > img{
+  width: 100%;
+}
+
+div.product > div.product_image > div.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, .5);
+  visibility: hidden;
+}
+
+div.product > div.product_image:hover > div.mask{
+  visibility: visible;
+}
+
+div.mask > a{
+  border: 3px solid white;
+  border-radius: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .7;
+}
+
+div.mask > a > img{
+  margin-top: 10px;
+}
+
+div.mask > a > p{
+  margin: 0; 
+  font-size: 14px;
+  color: white;
+  padding: 10px ;
+}
+
+div.mask > a:hover {
+  transform:translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+
+/* 產品文字區 */
+
+div.product > a.product_name{
+  font-size: 16px;
+  color: #963200;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  margin: 18px 0 8px 0;
+}
+
+div.product > a.product_name:hover{
+  font-weight: 600;
+  color: #e05814;
+}
+
+div.product > a.price{
+  font-size: 14px;
+  color: #353535;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.product > span{
+  font-size: 14px;
+  color: #898989;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+div.product > a.price:hover{
+  color: #898989;
+}
+
+div.product > p{
+  font-size: 12px;
+  color: rgb(209, 12, 12);
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  visibility: hidden;
+  font-family: "微軟正黑體";
+}
+
+div.a_few_left > p{
+  visibility: visible;
+}
+
+
+/* media */
+
+@media screen and (min-width: 1200px){
+  div.content_header, div.content, div.content_footer{
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  div.content_header, div.content, div.content_footer{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  div.content_header, div.content, div.content_footer{
+    width: 600px;
+  }
+}
+
+
+
+
